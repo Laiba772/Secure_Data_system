@@ -54,6 +54,15 @@ def decrypt_text(encrypted_text, key):
 # === Load stored data from JSON ===
 stored_data = load_data()
 
+# Set the page configuration
+st.set_page_config(
+    page_title="🔐 Secure Multi-User Data System",  # Page title
+    page_icon="🔐",                          # Page icon (you can also use URLs to images)
+    layout="wide",                       # Layout style, you can change to "centered" if you want
+    initial_sidebar_state="auto"             # Sidebar state (if you use a sidebar)
+)
+
+
 # === Navigation ===
 st.title("🔐 Secure Multi-User Data System")
 menu = ["Home", "Register", "Login", "Store Data", "Retrieve Data"]
